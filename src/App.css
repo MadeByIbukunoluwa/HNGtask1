@@ -1,81 +1,82 @@
 .app {
-    width: 100vw;
-    height: 100vh;
+    max-width: 1440px;
+    min-height: 100vh;
+    margin: 0 auto;
     display: flex;
-    /* flex-direction: column; */
+    flex-direction: column;
     justify-content: center;
     align-items: center;
-    /* overflow-y:scroll; */
-}
-.container {
-display: flex;
-flex-direction: column;
-justify-content: center;
-align-items: center;
-/* height: 892px; */
-width:375px;
-/* width:375px; */
-padding: 64px 0px 32px;
-gap: 24px;
-border:1px solid red;
-}
-.profile__section {
-   
-}
-.profile__img {
     
 }
-.profile__img:after {
-    
-}
-.profile__img:after:hover {
 
+.container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    max-width: 1152px;
+    padding: 64px 0px 32px;
+    gap: 24px;
+    border: 1px solid red;
+    width: 90%;
 }
-.links__section  {
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        /* padding: 0px; */
-        gap: 24px;
-        border: 1px solid red;
-        /* width: 343px; */
-        /* height: 528px; */
+
+.profile__section {}
+
+.profile__img {
+    width: 88px;
+    height: 88px;
+    border-radius: 50%;
+    object-fit: cover;
 }
+
+.profile__img:after {}
+
+.profile__img:after:hover {}
+
+.links__section {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 24px;
+    border: 1px solid red;
+    width: 100%;
+}
+
 .links {
     display: flex;
     justify-content: center;
     align-items: center;
-    text-align: center;  
+    text-align: center;
     background: #EAECF0;
     list-style: none;
     text-decoration: none;
-    /* min-width:375px; */
-    max-width:100%;
+    width: 80%;
     border-radius: 8px;
     padding: 24px 32px;
     border: 1px solid #EAECF0;
     color: #101828;
 }
-.links:hover {
 
-}
+.links:hover {}
 
-.links:focus {
+.links:focus {}
 
-}
 .footer__section {
     display: flex;
     justify-content: center;
     align-items: center;
-    width:100%;
+    width: 100%;
 }
+
 .footer__section img {
-    margin:0 10px;
+    margin: 0 10px;
 }
-/* 
-@media screen and (min-width:400px) {
-    .container {
-        width:90%;
-    }
-} */
+.main__footer {
+    display: flex;
+    flex-direction: column;
+}
+
+
+

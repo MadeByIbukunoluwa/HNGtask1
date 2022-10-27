@@ -3,11 +3,12 @@ import "../App.css"
 import linksArray from '../links'
 import slack from '/slack.svg'
 import github from '/github.svg'
+import profileimg from '/profile-img.jpg'
 const Container = () => {
   return (
     <div className='container'>
         <section className= "profile__section" >
-            <img src="" alt="profile image" className='profile__img'/>
+            <img src={profileimg} alt="profile image " className='profile__img'/>
             <p id = "twitter">ibkisthere</p>
             <p id = "slack"></p>
         </section>
