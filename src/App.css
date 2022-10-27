@@ -1,24 +1,47 @@
 
-
-.profile__section {
-  
+.container {
+width:100vw;
+height:100vh;
+display: flex;
+justify-content: center;
+align-items: center;
 }
+.profile__section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 0px;
+    gap: 24px;  
+    width: 343px;
+    height: 528px;
+}
+.profile__img {
+    
+}
+.profile__img:after {
+    
+}
+.profile__img:after:hover {
 
+}
 .links__section  {
-
+      display: flex;
+      flex-direction: column;
 }
 .links {
+    background: #EAECF0;
     list-style: none;
     text-decoration: none;
     height: 76px;
     min-width:375px;
     border-radius: 8px;
     padding: 24px 32px 24px 32px;
+    border: 1px solid #EAECF0
 }
 .links:hover {
 
 }
 
 .links:focus {
-    
+
 }

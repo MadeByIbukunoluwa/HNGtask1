@@ -3,7 +3,7 @@ import "../App.css"
 import linksObject from '../links'
 const Container = props => {
   return (
-    <div>
+    <div className='container'>
         <section className= "profile__section">
             <img src="" alt="profile image" className='profile__img'/>
             <p>Ibukunoluwa Akintobi</p>
@@ -12,7 +12,7 @@ const Container = props => {
             {linksArray.map(({name,link,id})=> {
                 return (
                     <a className='links' href= {link} id = {id}>
-                        {name}
+                        {name} 
                       </a>
                 )
             })}
