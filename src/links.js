@@ -11,22 +11,22 @@ const linksArray = [
     id: "btn__zuri",
   },
   {
-    name: "Zuri Team",
+    name: "Zuri Books",
     link: "http://books.zuri.team",
     id: "books",
   },
   {
-    name: "Zuri Books",
+    name: "Python Books",
     link: "https://books.zuri.team/",
     id: "book__python",
   },
   {
-    name: "Python Books",
+    name: "Background Check for coders",
     link: "https://background.zuri.team",
     id: "pitch",
   },
   {
-    name: "Design Rules",
+    name: "Design Books",
     link: "https://books.zuri.team/design-rules",
     id: "book__design",
   },

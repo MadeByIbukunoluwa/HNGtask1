@@ -1,19 +1,21 @@
-
-.container {
-width:100vw;
-height:100vh;
-display: flex;
-justify-content: center;
-align-items: center;
-}
-.profile__section {
+.app {
+    width: 100vw;
+    height: 100vh;
     display: flex;
     flex-direction: column;
+    justify-content: center;
     align-items: center;
-    padding: 0px;
-    gap: 24px;  
-    width: 343px;
-    height: 528px;
+    /* overflow-y:scroll; */
+}
+.container {
+display: flex;
+flex-direction: column;
+justify-content: center;
+align-items: center;
+gap:;
+}
+.profile__section {
+   
 }
 .profile__img {
     
@@ -25,18 +27,25 @@ align-items: center;
 
 }
 .links__section  {
-      display: flex;
-      flex-direction: column;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding: 0px;
+        gap: 24px;
+        width: 343px;
+        /* height: 528px; */
 }
 .links {
+    text-align: center;
     background: #EAECF0;
     list-style: none;
     text-decoration: none;
-    height: 76px;
+    min-height: 68px;
     min-width:375px;
     border-radius: 8px;
-    padding: 24px 32px 24px 32px;
-    border: 1px solid #EAECF0
+    padding: 24px 32px;
+    border: 1px solid #EAECF0;
 }
 .links:hover {
 
@@ -44,4 +53,9 @@ align-items: center;
 
 .links:focus {
 
+}
+
+
+@media screen and (min-width:400px) {
+    
 }
