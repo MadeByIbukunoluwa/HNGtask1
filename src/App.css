@@ -8,8 +8,17 @@
 
 }
 .links {
-height: 76px;
+    list-style: none;
+    text-decoration: none;
+    height: 76px;
     min-width:375px;
     border-radius: 8px;
     padding: 24px 32px 24px 32px;
+}
+.links:hover {
+
+}
+
+.links:focus {
+    
 }

@@ -9,11 +9,11 @@ const Container = props => {
             <p>Ibukunoluwa Akintobi</p>
         </section>
          <section className="links__section">
-            {linksArray.map(()=> {
+            {linksArray.map(({name,link,id})=> {
                 return (
-                    <div className='links'>
-
-                    </div>
+                    <a className='links' href= {link} id = {id}>
+                        {name}
+                      </a>
                 )
             })}
          </section>
