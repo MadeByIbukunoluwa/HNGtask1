@@ -3,7 +3,7 @@ import "../App.css"
 import linksArray from '../links'
 const Container = () => {
   return (
-    <main className='container'>
+    <div className='container'>
         <section className= "profile__section">
             <img src="" alt="profile image" className='profile__img'/>
             <p id = "twitter">ibkisthere</p>
@@ -19,10 +19,10 @@ const Container = () => {
                 )
             })}
          </section>
-         <footer>
+         <footer className='footer__section'>
             
          </footer>
-    </main>
+    </div>
   )
 }
 
