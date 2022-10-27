@@ -6,7 +6,7 @@ const Container = () => {
     <main className='container'>
         <section className= "profile__section">
             <img src="" alt="profile image" className='profile__img'/>
-            <p id = "twitter"></p>
+            <p id = "twitter">ibkisthere</p>
             <p id = "slack"></p>
         </section>
 
