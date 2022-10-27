@@ -1,18 +1,18 @@
 import React from 'react'
-import classes from "../App.modules.css"
+import "../App.css"
 import linksObject from '../links'
 const Container = props => {
   return (
     <div>
-        <section className={classes.profile}>
-            <img src="" alt="profile image"/>
+        <section className= "profile__section">
+            <img src="" alt="profile image" className='profile__img'/>
             <p>Ibukunoluwa Akintobi</p>
         </section>
-         <section className={classes.links}>
-            {linksObject.map(()=> {
+         <section className="links__section">
+            {linksArray.map(()=> {
                 return (
-                    <div>
-                        
+                    <div className='links'>
+
                     </div>
                 )
             })}
