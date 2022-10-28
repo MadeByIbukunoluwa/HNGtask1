@@ -105,6 +105,7 @@ display: none;
     justify-content: center;
     align-items: center;
     text-align: center;
+    position: relative;
     background: #EAECF0;
     list-style: none;
     text-decoration: none;

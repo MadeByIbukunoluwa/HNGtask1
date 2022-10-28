@@ -8,7 +8,8 @@
     left: 50%;
     transform: translateX(-50%);
     z-index: 3;
-    display: none;
+    /* display: none; */
+    display: block;
     padding: 2rem;
     border-radius: 8px;
     /* transition: var(--transition); */

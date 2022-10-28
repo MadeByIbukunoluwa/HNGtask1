@@ -9,18 +9,14 @@ import Tooltip from './tooltip';
 const Links = () => {
     const [showToolTip, setShowToolTip] = useState(false);
     const container = useRef(null); 
+    const [position, setPosition] = useState({});
 
     function setTooltipActive(e) {
-      const containerPosition = e.target.current.getBoundingClientRect();
-      const [position, setPosition] = useState({});
-      const center = (position.left + position.right) / 2;
-      const bottom = position.bottom - 3;
+        console.log(e.target)
+      const containerPosition = e.target.getBoundingClientRect();
       setPosition(containerPosition);
       setShowToolTip(true);
       console.log("hekellele")
-      return (
-      
-      );
     }
 
 
@@ -37,27 +33,28 @@ return (
     <section className="links__section">
       {linksArray.map(({ name, link, id, subtext, maintext }) => {
           return (
-              <>
-            <a
-              className="links"
-              href={link}
-              id={id}
-              key={id}
-              onMouseOver={setTooltipActive}
-              onMouseLeave={setTooltipInActive}
-              ref={container}
+            <>
+              <a
+                className="links"
+                href={link}
+                id={id}
+                key={id}
+                onMouseOver={setTooltipActive}
+                onMouseLeave={setTooltipInActive}
+                ref={container}
               >
-              {name}
-            </a>
-            {showToolTip && (
-                <Tooltip
-                maintext={maintext}
-                subtext={subtext}
-                // position={containerPosition}
-                />
+                {name}
+
+                {showToolTip && (
+                  <Tooltip
+                    maintext={maintext}
+                    subtext={subtext}
+                    position={position}
+                  />
                 )}
-          </>
-        );
+              </a>
+            </>
+          );
     })}
     </section>
   );
