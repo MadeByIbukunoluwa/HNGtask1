@@ -3,7 +3,8 @@ import "../App.css"
 import linksArray from '../links'
 import slack from '/slack.svg'
 import profileimg from '/profile-img.jpg'
-import mobilesharebutton from '/Avatarsharebutton.svg'
+import mobilesharebutton from '/mobilesharebutton.svg'
+import desktopsharebutton from '/desktopsharebutton.svg'
 import github from '/github.svg'
 const Container = () => {
   return (
@@ -14,7 +15,8 @@ const Container = () => {
             <p id = "twitter">ibkisthere</p>
             <p id = "slack"></p>
         </section>
-        <img src={mobilesharebutton} alt="" class= "mobile__share-_button" />
+        <img src={mobilesharebutton} alt="" class= "mobile__share__button" />
+        <img src={desktopsharebutton} alt="" class= "desktop__share__button" />
 
          <section className="links__section">
             {linksArray.map(({name,link,id})=> {
