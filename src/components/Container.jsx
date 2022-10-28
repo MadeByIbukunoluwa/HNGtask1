@@ -10,8 +10,12 @@ import github from '/github.svg'
 
 const Container = () => {
     const PopupComponent = () => {
+        function copyLink () {
+            navigator.clipboard.writeText(window.location.origin)
+            console.log(navigator.clipboard.writeText(window.location.origin))
+        }
         return (
-            <div className='popup__share'>
+            <div className='popup__share' onClick={copyLink}>
                 <img src={popupshareicon} alt="share profile link icon" />
                 <p>Share Profile</p>
             </div>
