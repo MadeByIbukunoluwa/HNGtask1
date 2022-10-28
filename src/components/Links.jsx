@@ -1,34 +1,12 @@
 
 
 import React,{useEffect,useState,useRef} from 'react'
+import ReactTooltip from "react-tooltip";
 import linksArray from "../links";
-import Tooltip from './tooltip';
 
 
 
 const Links = () => {
-    const [showToolTip, setShowToolTip] = useState(false);
-    const container = useRef(null); 
-    const [position, setPosition] = useState({});
-
-    function setTooltipActive(e) {
-        console.log(e.target)
-      const containerPosition = e.target.getBoundingClientRect();
-      setPosition(containerPosition);
-      setShowToolTip(true);
-      console.log("hekellele")
-    }
-
-
-    function setTooltipInActive () {
-        setShowToolTip(false);
-    }
-
-//     const Tooltip = () => {
-        
-// };
-
-
 return (
     <section className="links__section">
       {linksArray.map(({ name, link, id, subtext, maintext }) => {
@@ -39,20 +17,13 @@ return (
                 href={link}
                 id={id}
                 key={id}
-                onMouseOver={setTooltipActive}
-                onMouseLeave={setTooltipInActive}
-                ref={container}
+                data-for={id}
+                data-tip={subtext}
+                data-event = "click"
               >
                 {name}
-
-                {showToolTip && (
-                  <Tooltip
-                    maintext={maintext}
-                    subtext={subtext}
-                    position={position}
-                  />
-                )}
               </a>
+              <ReactTooltip place="top" id={id} event="click" />
             </>
           );
     })}
@@ -67,3 +38,37 @@ export default Links
 //     () => {
 
 // }, [showToolTip]);
+
+
+{/* <ActivateToolTip ID = {id}/> */}
+
+
+//  const container = useRef(null);
+//  const [position, setPosition] = useState({});
+
+//  function setTooltipActive(e, { ID }) {
+//    console.log(e.target);
+//    const containerPosition = e.target.getBoundingClientRect();
+//    setPosition(containerPosition);
+//    if (e.target === document.getElementsByClassName("ID")) return <Tooltip />;
+//    //   setShowToolTip(true);
+//    //   console.log("hekellele");
+//  }
+
+//  function ActivateToolTip() {
+//    // if (ID === e.target.classlist)
+//  }
+
+//  function setTooltipInActive() {
+//    setShowToolTip(false);
+//  }
+
+ // const [showToolTip, setShowToolTip] = useState(false);
+   
+
+
+
+
+//     const Tooltip = () => {
+        
+// };
