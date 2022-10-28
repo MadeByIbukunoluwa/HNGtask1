@@ -7,23 +7,29 @@
     justify-content: center;
     align-items: center; 
 }
-
 .container {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     max-width: 1152px;
-    padding: 64px 0px 32px;
-    gap: 24px;
-    border: 1px solid red;
+    padding: 64px 0px 64px;
+    gap: 32px;
+    /* border: 1px solid red; */
     width: 90%;
 }
-
 .profile__section {
     position: relative;
 }
-
+.profile__section #twitter {
+    font-weight: 700;
+    font-style: bold;
+    font-size: 20px;
+    cursor:pointer;
+}
+.profile__section #slack {
+display: none;
+}
 .profile__img {
     width: 88px;
     height: 88px;
@@ -35,16 +41,22 @@
 
 .profile__img:after:hover {}
 
+.popup__share {
+    display: flex;
+    box-shadow: 1px 5px 15px rgb(16 24 40 / 10%)
+}
 .mobile__share__button {
     position:absolute;
     top:63.17px;
-    right:29.33px
+    right:29.33px;
+    cursor: pointer;
 }
 .desktop__share__button {
     position: absolute;
     display: none;
     right:24.44444%;
     top:56.421px;
+    cursor: pointer;
 }
 .links__section {
     display: flex;
@@ -52,7 +64,7 @@
     justify-content: center;
     align-items: center;
     gap: 24px;
-    border: 1px solid red;
+    /* border: 1px solid red; */
     width: 100%;
 }
 
@@ -64,6 +76,8 @@
     background: #EAECF0;
     list-style: none;
     text-decoration: none;
+    font-weight:500;
+    line-height: 28px;
     width: 80%;
     border-radius: 8px;
     padding: 24px 32px;
@@ -71,23 +85,30 @@
     color: #101828;
 }
 
-.links:hover {}
+.links:hover {
 
-.links:focus {}
+}
+
+.links:focus {
+
+}
 
 .footer__section {
     display: flex;
     justify-content: center;
     align-items: center;
     width: 100%;
+   
 }
 
 .footer__section img {
     margin: 0 10px;
 }
 .main__footer {
+    border-top:1px solid grey;
     display: flex;
     flex-direction: column;
+    padding:32px, 0px, 32px, 0px;
     width:90%;
 }
  .ingressive__img {
@@ -105,6 +126,11 @@
     }
     .desktop__share__button {
         display:block;
+    }
+    .main__footer {
+        flex-direction: row;
+        justify-content: space-around;
+        align-items: center;
     }
  }
 

@@ -7,7 +7,7 @@ const Footer = () => {
     <footer className='main__footer'>
         <img src={zurilogo} alt="" className='zuri__img' />
         <p>HNG Internship 9 Frontend Task</p>
-        <img src={ingressiveforgood} alt="" className='ingressive__img' />
+        <img src={ingressiveforgood} alt="" className='ingressive__img' /> 
     </footer>
   )
 }
