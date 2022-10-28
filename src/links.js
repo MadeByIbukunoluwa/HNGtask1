@@ -4,12 +4,14 @@ const linksArray = [
     name: "Twitter Link",
     link: "https://twitter.com/ibkisthere",
     id: "twitter__link",
+    maintext: "My Twitter Handle",
     subtext: "This is a link to take you to my twitter handle ",
   },
   {
     name: "Zuri Team",
     link: "https://training.zuri.team/",
     id: "btn__zuri",
+    maintext: "",
     subtext: "Meet the Zuri Family",
   },
   {
@@ -39,6 +41,7 @@ const linksArray = [
     name: "Design Books",
     link: "https://books.zuri.team/design-rules",
     id: "book__design",
+    maintext: "UI/UX books",
     subtext:
       "get UI/UX books for writing copy that's engaging and conversational—and aligned with the goals of both the user andthe business",
   },
