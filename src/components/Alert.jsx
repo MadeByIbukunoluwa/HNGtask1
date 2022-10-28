@@ -8,7 +8,7 @@ import React,{useEffect} from "react";
             return () => clearTimeout(timeout)
         }, [alert])
         return (
-            <div>Copied to clipboard</div>
+            <p className="clipboard__alert">Copied to clipboard!</p>
         )
     }
     export default Alert
