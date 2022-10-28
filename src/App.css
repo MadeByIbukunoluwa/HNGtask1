@@ -42,8 +42,27 @@ display: none;
 .profile__img:after:hover {}
 
 .popup__share {
+    background: #fff;
+    border-radius: 8px;
+    box-shadow: 1px 5px 15px rgb(16 24 40 / 10%);
     display: flex;
-    box-shadow: 1px 5px 15px rgb(16 24 40 / 10%)
+    justify-content: space-around;
+    align-items: center;
+    height: auto;
+    min-width: 200px;
+    padding: 16px;
+    font-weight: 700;
+    font-style: bold;
+    font-size: 20px;
+     cursor: pointer;
+    /* position: absolute;
+    right: 0;
+    top: 70px; */
+    z-index: 2;
+}
+.popup__share img {
+    width:50px;
+    height:50px;
 }
 .mobile__share__button {
     position:absolute;

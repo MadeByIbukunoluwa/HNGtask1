@@ -18,7 +18,7 @@ const Container = () => {
         )
     }
     const [popup, setPopup] = useState(false)
-    const [copyToClipboard,setCopytoClipboard ] = useState(false)
+    const [copyToClipboard,setCopytoClipboard] = useState(false)
     function togglePopup () {
         setPopup(() => setPopup(!popup))
         console.log("hello")
