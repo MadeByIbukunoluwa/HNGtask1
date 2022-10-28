@@ -1,6 +1,7 @@
 
 .tooltip {
     background: white;
+    color:black;
     box-shadow: 1px 5px 15px rgb(16 24 40 / 10%);
     position: absolute;
     top: 4rem;

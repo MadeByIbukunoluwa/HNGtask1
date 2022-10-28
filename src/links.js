@@ -2,7 +2,8 @@
 const linksArray = [
   {
     name: "Twitter Link",
-    link: "https://twitter.com/ibkisthere",
+    // link: "https://twitter.com/ibkisthere",
+    link: "#",
     id: "twitter__link",
     maintext: "My Twitter Handle",
     subtext: "This is a link to take you to my twitter handle ",

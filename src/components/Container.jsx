@@ -13,15 +13,12 @@ const Container = () => {
         const [popup, setPopup] = useState(false)
         const [copyAlert,setCopyAlert] = useState(false)
      
-          
     function togglePopup () {
         setPopup(() => setPopup(!popup))
     }
 
-    
   return (
     <div className='container'>
-
         <section className= "profile__section" >
             <img src={profileimg} alt="profile image " className='profile__img'/>
             <p id = "twitter">@ibkisthere</p>
