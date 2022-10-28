@@ -68,13 +68,14 @@ display: none;
 }
 .clipboard__alert {
          background: #EAECF0;  
+         border-radius:24px ;
         color: #475467;
         font-size: 14px;
         font-weight: 600;
         line-height: 20px;
         letter-spacing: 0em;
         text-align: center;
-       padding: 8px, 16px, 8px, 16px;
+       padding: 8px 8px 8px 8px;
 }
 .mobile__share__button {
     position:absolute;

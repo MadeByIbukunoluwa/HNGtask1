@@ -24,7 +24,7 @@ const Container = () => {
         </section>
         <img src={mobilesharebutton} alt="" className= "mobile__share__button" onClick = {togglePopup} />
         {popup && <PopupComponent setPopup = {setPopup} setCopyAlert = {setCopyAlert} />} 
-        {copyAlert && <Alert alert = {copyAlert} setCopyAlert = {setCopyAlert}/>}
+        {copyAlert && <Alert alert = {copyAlert} setCopyAlert = {setCopyAlert} text = "Copied to Clipboard!"/>}
         <img src={desktopsharebutton} alt="" className= "desktop__share__button" />
 
          <section className="links__section">

@@ -1,6 +1,6 @@
 
 import React,{useEffect} from "react";
-    const Alert = ({alert,setCopyAlert}) => {
+    const Alert = ({alert,setCopyAlert,text}) => {
         useEffect(() => {
             const timeout = setTimeout(() => {
             setCopyAlert(false)
@@ -8,7 +8,7 @@ import React,{useEffect} from "react";
             return () => clearTimeout(timeout)
         }, [alert])
         return (
-            <p className="clipboard__alert">Copied to clipboard!</p>
+            <p className="clipboard__alert">{text}</p>
         )
     }
     export default Alert
