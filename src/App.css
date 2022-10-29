@@ -126,7 +126,7 @@ display: none;
 
 }
 
-.footer__section {
+.main__container__social {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -134,7 +134,7 @@ display: none;
    
 }
 
-.footer__section img {
+.main__container__social img {
     margin: 0 10px;
 }
 .main__footer {

@@ -1,13 +1,11 @@
-import React,{useState,useRef} from 'react'
+import React,{useState} from 'react'
 import "../App.css"
-import Link from './Link/LinkItem'
-import Alert from './Alert'
-import PopupComponent from './popupshare'
-import slack from '/slack.svg'
-import profileimg from '/profile-img.jpg'
+import Link from '../Link/LinkItem'
+import Alert from '../Alert'
+import PopupComponent from '../popupshare'
+import linksArray from '../../data/links'
 import mobilesharebutton from '/mobilesharebutton.svg'
 import desktopsharebutton from '/desktopsharebutton.svg'
-import github from '/github.svg'
 
 const Container = () => {
         const [popup, setPopup] = useState(false)
@@ -19,8 +17,10 @@ const Container = () => {
 
   return (
     <div className="container">
+
+
       <section className="profile__section">
-        <img src={profileimg} alt="profile image " className="profile__img" />
+        <img src="" alt="profile image" className="profile__img" />
         <p id="twitter">@ibkisthere</p>
         <p id="slack">ibukunoluwa</p>
       </section>
@@ -31,9 +31,13 @@ const Container = () => {
         className="mobile__share__button"
         onClick={togglePopup}
       />
+
+    <img src={desktopsharebutton} alt="" className="desktop__share__button" />
+
       {popup && (
         <PopupComponent setPopup={setPopup} setCopyAlert={setCopyAlert} />
       )}
+
       {copyAlert && (
         <Alert
           alert={copyAlert}
@@ -41,7 +45,7 @@ const Container = () => {
           text="Copied to Clipboard!"
         />
       )}
-      <img src={desktopsharebutton} alt="" className="desktop__share__button" />
+      
 
       <section className="links__section">
         {linksArray.map(({ name, link, id, subtext, title }) => {
@@ -52,20 +56,16 @@ const Container = () => {
             linkSubText = {subtext}
             linkTitle = {title} 
             id = {id} 
+            linkInfo = {<LinkInfo title={{title}} subText={{subtext}}/>}
            />
           );
         })}
       </section>
 
-      <footer className="footer__section">
-        <img src={slack} alt="slack logo" />
-        <img src={github} alt="github logo" />
-      </footer>
+      
 
     </div>
   );
 }
-
-
 
 export default Container

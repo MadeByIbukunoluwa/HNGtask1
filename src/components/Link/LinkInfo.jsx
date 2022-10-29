@@ -2,7 +2,7 @@
 
 import React from "react";
 
-const LinkDetails = ({ title, subText }) => {
+const LinkInfo ({ title, subText }) => {
   return (
     <>
       <div className="link-tree-linkDetails">
@@ -16,7 +16,7 @@ const LinkDetails = ({ title, subText }) => {
         </div>
       </div>
     </>
-  );
+  ); 
 };
 
-export default LinkDetails;
+export default LinkInfo
