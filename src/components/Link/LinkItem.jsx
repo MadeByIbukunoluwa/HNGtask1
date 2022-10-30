@@ -1,6 +1,7 @@
 
 
 import React from 'react'
+import "./LinkItem.css"
 import { Tooltip } from "@mui/material";
 import { RWebShare } from "react-web-share";
 import shareicon from "../../assets/images/share-icon.svg"
@@ -15,7 +16,7 @@ const LinkItem = ({
 }) => {
    
 return (
-        <div>
+        <div className='link__item'>
             <Tooltip title={linkInfo} arrow>
                 <a href={link} id={id} className="" target="_blank" rel="noreferrer nooppener" onClick={(e) => {
                     e.preventDefault();
@@ -35,8 +36,8 @@ return (
                         </span>
                     </RWebShare>
                       </a>
-                       </Tooltip>
-                </div>
+             </Tooltip>
+     </div>
     );
 };
 

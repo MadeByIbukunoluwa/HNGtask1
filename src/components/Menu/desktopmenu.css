@@ -3,14 +3,10 @@
     position: absolute;
     right: 24.44444%;
     top: 63.17px;
-    z-index: 2000;
     cursor: pointer;
     width: 90px;
     font-size: 12px;
     border-radius: 50%;
     cursor: pointer;
-    /* display: flex; */ 
-    /* flex-direction: column;
-    align-items: flex-end; */
     height: 40px;
 }

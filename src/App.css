@@ -94,12 +94,6 @@ display: none;
         text-align: center;
        padding: 8px 8px 8px 8px;
 }
-.mobile__share__button {
-    position:absolute;
-    top:63.17px;
-    right:29.33px;
-    cursor: pointer;
-}
 
 .links__section {
     display: flex;
@@ -111,24 +105,6 @@ display: none;
     width: 100%;
 }
 
-.links {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-    /* position: relative; */
-    background: #EAECF0;
-    list-style: none;
-    text-decoration: none;
-    font-weight:500;
-    line-height: 28px;
-    width: 80%;
-    border-radius: 8px;
-    padding: 24px 32px;
-    /* border: 1px solid #EAECF0; */
-    border: 1px solid red;
-    color: #101828;
-}
 
 .links:hover {
 

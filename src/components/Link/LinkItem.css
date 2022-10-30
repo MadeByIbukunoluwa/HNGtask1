@@ -1,0 +1,20 @@
+
+
+.link__item {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    /* position: relative; */
+    background: #EAECF0;
+    list-style: none;
+    text-decoration: none;
+    font-weight: 500;
+    line-height: 28px;
+    width: 80%;
+    border-radius: 8px;
+    padding: 24px 32px;
+    /* border: 1px solid #EAECF0; */
+    border: 1px solid red;
+    color: #101828;
+}

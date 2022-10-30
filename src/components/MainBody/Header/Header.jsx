@@ -30,7 +30,7 @@ const Header = () => {
       </div>
 
       <Image handleClickImage = {handleClickImage} showImage = {showImage} />
-      <h3>ibukunoluwa Akintobi</h3>
+      <h3>@ibukunoluwa Akintobi</h3>
       <div className="header__twitter__link">
         <FaTwitter />
         <strong>
