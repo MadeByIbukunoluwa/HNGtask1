@@ -47,12 +47,6 @@
 .profile__section #slack {
 display: none;
 }
-.profile__img {
-    width: 88px;
-    height: 88px;
-    border-radius: 50%;
-    object-fit: cover;
-}
 
 .profile__img:after {}
 

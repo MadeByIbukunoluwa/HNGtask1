@@ -43,8 +43,6 @@ const Header = () => {
       <h1>Ibukunoluwa Akintobi</h1>
       <Image handleClickImage = {handleClickImage} showImage = {showImage} />
 
-
-
       <div className="header__twitter__link">
         <FaTwitter />
         <strong>

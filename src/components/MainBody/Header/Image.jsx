@@ -1,16 +1,17 @@
 import React from "react";
 import camera from "../../../assets/images/camera.svg";
-
+import profileimg from "../../../assets/images/profile-img.jpg"
+import "./Image.css" 
 
 
 const Image = ({handleClickImage,showImage}) => {
   return (
-    <div className="link-tree-header-profileImage">
+    <div className="profile__img">
       <img
-        src="https://unsplash.com/photos/fug7hitpSDE"
+        src={profileimg}
         alt=""
         tabIndex="0"
-        id="profile__img"
+        id=""
         onClick={handleClickImage}
       />
 
