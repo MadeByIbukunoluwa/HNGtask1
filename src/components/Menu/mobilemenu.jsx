@@ -1,6 +1,7 @@
 
 
 import React from "react";
+import "../../App.css" 
 import "./mobilemenu.css"
 import { RWebShare } from "react-web-share";
 import mobileshareicon from "../../assets/images/mobileshareicon.svg";

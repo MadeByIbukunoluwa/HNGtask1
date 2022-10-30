@@ -1,5 +1,6 @@
 
 .mobile__menu {
+  display: none;
     position: absolute;
     top: 63.17px;
     right: 30px;
@@ -9,7 +10,6 @@
     font-size: 12px;
     border-radius: 50%;
     cursor: pointer;
-    /* display: none; */
     display: flex;
     flex-direction: column;
     align-items: flex-end;
@@ -19,9 +19,9 @@
 
 .mobile__menu__popup {
     display: none;
-  box-shadow: 1px 5px 15px rgba(16, 24, 40, .1);
-min-width: 150px;
-  padding:16px 8px;
+    box-shadow: 1px 5px 15px rgba(16, 24, 40, .1);
+    min-width: 150px;
+    padding:16px 8px;
      border-radius: 8px;
     z-index: 2000;
     justify-content: center;
