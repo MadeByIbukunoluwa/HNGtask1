@@ -41,9 +41,6 @@ a {
         height: 100%;
          cursor: default;
 }
-.header__slack__link {
-    display: none;
-}
 /* .profile__section {
     position: relative;
 } */
@@ -175,11 +172,7 @@ display: none;
     .desktop__share__button {
         display:block;
     }
-    .main__footer {
-        flex-direction: row;
-        justify-content: space-around;
-        align-items: center;
-    }
+   
  }
  */
  
@@ -191,4 +184,9 @@ display: none;
     .mobile__menu {
         display: none !important;
     }
+         .main__footer {
+             flex-direction: row;
+             justify-content: space-around;
+             align-items: center;
+         }
 }

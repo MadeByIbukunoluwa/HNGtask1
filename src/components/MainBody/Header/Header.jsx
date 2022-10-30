@@ -1,5 +1,5 @@
 import React,{useState} from "react";
-import "../../../App.css"
+import "./Header.css"
 import {FaTwitter,} from "react-icons/fa"
 import {AiOutlineSlack} from "react-icons/ai"
 import DesktopMenu from "../../Menu/desktopmenu";
@@ -11,7 +11,6 @@ import Image from "./Image";
 const Header = () => {
   const [showImage, setShowImage] = useState(false);
   const [showMenu, setShowMenu] = useState(false);
-  const [showPopup,setShowPopup] = useState(false)
 
   const handleClickImage = () => {
     setShowImage(() => !showImage);
@@ -23,15 +22,15 @@ const Header = () => {
   };
 
   return (
-    <>
-      <div className="link-tree-header">
+    <header className="main__header">
+
+      <div className="share">
         <MobileMenu showMenu={showMenu} handleClickMenu={handleClickMenu}/>
         <DesktopMenu showMenu={showMenu} handleClickMenu={handleClickMenu}/> 
       </div>
 
       <Image handleClickImage = {handleClickImage} showImage = {showImage} />
-      <h2>Ibukunoluwa Akintobi</h2>
-
+      <h3>ibukunoluwa Akintobi</h3>
       <div className="header__twitter__link">
         <FaTwitter />
         <strong>
@@ -64,7 +63,7 @@ const Header = () => {
 
 
 
-    </>
+    </header>
   );
 };
 
