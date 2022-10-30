@@ -1,7 +1,11 @@
 import React from 'react'
-import LinkItem from '../Link/LinkItem';
-import linksArray from '../../data/links';
-import LinkInfo from '../Link/LinkInfo';
+import "./Body.css"
+import LinkItem from '../../Link/LinkItem';
+import linksArray from '../../../data/links';
+import LinkInfo from '../../Link/LinkInfo';
+
+
+
 const Body = () => {
   return (
     <section className="links__section">

@@ -1,8 +1,8 @@
 import React,{useState} from 'react'
-import "../../App.css"
-import Header from './Header/Header';
-import Socials from './socials';
-import Body from './Body';
+import "./Container.css"
+import Header from '../Header/Header';
+import Socials from '../Socials/Socials';
+import Body from '../Body/Body';
 
 
 const Container = () => {

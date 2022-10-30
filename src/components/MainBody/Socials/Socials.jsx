@@ -1,7 +1,7 @@
 import React from 'react'
-import slack from "../../assets/images/slack.svg"
-import github from "../../assets/images/github.svg"
-
+import slack from "../../../assets/images/slack.svg"
+import github from "../../../assets/images/github.svg"
+import "./Socials.css"
 const Socials = (props) => {
   return (
     <footer className="main__container__social">

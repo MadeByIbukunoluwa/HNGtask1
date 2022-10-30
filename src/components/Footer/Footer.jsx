@@ -1,6 +1,7 @@
 import React from 'react'
-import zurilogo from "../assets/images/zuriinternship.svg";
-import ingressiveforgood from "../assets/images/I4G.svg"
+import zurilogo from "../../assets/images/zuriinternship.svg";
+import ingressiveforgood from "../../assets/images/I4G.svg"
+import "./Footer.css"
 
 const Footer = () => {
   return (
@@ -12,6 +13,5 @@ const Footer = () => {
   )
 }
 
+export default Footer 
 
-
-export default Footer

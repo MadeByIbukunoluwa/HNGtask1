@@ -28,7 +28,7 @@ const linksArray = [
     link: "https://books.zuri.team/",
     id: "book__python",
     maintext: "Grab a copy of the python for beginners book",
-    subtext: "",
+    subtext: "Grab a copy of the python for beginners book",
   },
   {
     name: "Background Check for coders",
@@ -36,7 +36,7 @@ const linksArray = [
     id: "pitch",
     maintext: "Tech Talent Hunt",
     subtext:
-      "Tech talent hunt is a program where you get to test your skills in your area of expertise, learn from mentors, adn wathc others do amazing things with tech",
+      "Tech talent hunt is a program where you get to test your skills in your area of expertise, learn from mentors, and watch others do amazing things with tech",
   },
   {
     name: "Design Books",
