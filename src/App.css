@@ -103,13 +103,7 @@ display: none;
     right:29.33px;
     cursor: pointer;
 }
-.desktop__share__button {
-    position: absolute;
-    display: none;
-    right:24.44444%;
-    top:56.421px;
-    cursor: pointer;
-}
+
 .links__section {
     display: flex;
     flex-direction: column;
@@ -188,9 +182,10 @@ display: none;
     }
  }
  */
+ 
 @media screen and (min-width:600px) {
     .desktop__menu {
-        display: block;
+        display: block !important;
     }
 
     .mobile__menu {

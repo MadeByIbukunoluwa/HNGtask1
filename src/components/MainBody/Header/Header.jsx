@@ -1,15 +1,10 @@
 import React,{useState} from "react";
 import "../../../App.css"
-import { RWebShare } from "react-web-share";
-import { Tooltip } from "@mui/material";
 import {FaTwitter,} from "react-icons/fa"
 import {AiOutlineSlack} from "react-icons/ai"
 import DesktopMenu from "../../Menu/desktopmenu";
 import MobileMenu from "../../Menu/mobilemenu";
 import Image from "./Image";
-import desktopshareicon from "../../../assets/images/desktopshareicon.svg";
-import mobileshareicon from '../../../assets/images/mobileshareicon.svg'
-
 
 // import MobileMenu from "../MobileMenu";
 
@@ -17,7 +12,7 @@ const Header = () => {
   const [showImage, setShowImage] = useState(false);
   const [showMenu, setShowMenu] = useState(false);
   const [showPopup,setShowPopup] = useState(false)
-  
+
   const handleClickImage = () => {
     setShowImage(() => !showImage);
     console.log(showImage); 
@@ -30,10 +25,10 @@ const Header = () => {
   return (
     <>
       <div className="link-tree-header">
-     
-        <MobileMenu showMenu={showMenu} handleClickMenu={handleClickMenu} />
-        <DesktopMenu showMenu={showMenu} handleClickMenu={handleClickMenu} />
+        <MobileMenu showMenu={showMenu} handleClickMenu={handleClickMenu}/>
+        <DesktopMenu showMenu={showMenu} handleClickMenu={handleClickMenu}/> 
       </div>
+
       <Image handleClickImage = {handleClickImage} showImage = {showImage} />
       <h2>Ibukunoluwa Akintobi</h2>
 
