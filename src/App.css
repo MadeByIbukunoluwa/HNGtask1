@@ -18,6 +18,9 @@
     /* border: 1px solid red; */
     width: 90%;
 }
+.header__slack__link {
+    display: none;
+}
 .profile__section {
     position: relative;
 }

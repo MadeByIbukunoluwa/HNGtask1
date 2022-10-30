@@ -14,7 +14,7 @@ const Socials = (props) => {
       </a>
 
       <a
-        href="https://github.com/browyn"
+        href="https://github.com/MadeByIbukunoluwa"
         target="_blank"
         rel="noreferrer nooppener"
       >

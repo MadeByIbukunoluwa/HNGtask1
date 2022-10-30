@@ -1,4 +1,4 @@
-import Container from './components/MainContainer/Container'
+import Container from './components/MainBody/Container'
 import './App.css'
 import Footer from './components/Footer'
 function App() {
