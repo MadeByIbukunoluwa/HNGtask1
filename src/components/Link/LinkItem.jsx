@@ -21,31 +21,32 @@ const LinkItem = ({
 //           }
 //         }
 return (
-  <div className="link__item">
     <Tooltip title={linkInfo} arrow>
+        <div className="link__item">
       <a
         href={link}
         id={id}
-        className=""
+        className="link__item__inner__link"
         target="_blank"
         rel="noreferrer nooppener"
         onClick={(e) => checklink()}
       >
         {linkName}
+
+      </a>
         <RWebShare data={{ text: linkTitle, url: link, title: linkSubText }}>
           <span
             onClick={(e) => {
               e.preventDefault();
-            }}
-          >
-            <div className="share-icon">
+            }} >
+            <div className="share__icon">
               <img src={shareicon} alt="" />
             </div>
           </span>
         </RWebShare>
-      </a>
-    </Tooltip>
+        
   </div>
+    </Tooltip>
 );
 };
 

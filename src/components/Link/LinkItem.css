@@ -2,6 +2,7 @@
 
 .link__item {
     display: flex;
+    position: relative;
     justify-content: center;
     align-items: center;
     text-align: center;
@@ -18,3 +19,11 @@
     border: 1px solid red;
     color: #101828;
 }
+
+.share__icon {
+    position: absolute;
+    top:50%;
+    transform: translate(-50%,-50%);
+    right:10px; 
+} 
+
