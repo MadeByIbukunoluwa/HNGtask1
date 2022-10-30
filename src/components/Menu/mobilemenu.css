@@ -1,0 +1,24 @@
+
+.mobile__menu {
+    position: absolute;
+    top: 63.17px;
+    right: 30px;
+    cursor: pointer;
+    width: 90px;
+    font-size: 12px;
+    border-radius: 50%;
+    cursor: pointer;
+    /* display: none; */
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    height: 40px;
+}
+
+.mobile__menu__popup {
+    display: none;
+}
+
+.mobile__menu__popup .show {
+    display:block;
+}

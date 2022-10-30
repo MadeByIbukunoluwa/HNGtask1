@@ -1,41 +1,45 @@
-import mobileshareicon from "../../assets/images/mobileshareicon.svg";
+
 
 import React from "react";
+import "./mobilemenu.css"
 import { RWebShare } from "react-web-share";
+import mobileshareicon from "../../assets/images/mobileshareicon.svg";
+import shareicon from "../../assets/images/share-icon.svg";
 
 const MobileMenu = ({ handleClickMenu, showMenu }) => {
   return (
-    <>
-      <nav>
-        <div className="link-tree-mobileMenu">
-          <div className="link-tree-mobileMenu-container">
-            <ul
-              className={`link-tree-mobileMenu-list ${showMenu ? "show" : ""}`}
-              onClick={handleClickMenu}
-            >
-              <li>
-                <RWebShare
-                  data={{
-                    text: "Ibukunoluwa Akintobi",
-                    url: window.location.href,
-                    title:
-                      "Link Tree Application By Ibukunoluwa Akintobi - HNGi9 Frontend Task",
-                  }}
-                  onClick={() => console.log("shared successfully!")}
-                >
-                  <small>
-                  <img src={mobileshareicon} alt="" />
-                    <strong>Share Profile</strong>
-                  </small>
-                </RWebShare>
-              </li>
-            </ul>
-          </div>
+      <nav className="mobile__menu">
+      <div>
+        <img src={mobileshareicon} alt="" onClick={handleClickMenu} />
+      </div>
+
+        <div
+          className={`mobile__menu__popup ${showMenu ? "show" : ""}`}
+          onClick={handleClickMenu} >
+          <RWebShare
+            data={{
+              text: "Ibukunoluwa Akintobi",
+              url: window.location.href,
+              title:
+                "Link Tree Application By Ibukunoluwa Akintobi - First HNG i9 Frontend Task",
+            }}
+            onClick={console.log("copied successfully")}
+          >
+            <div>
+              <img src={shareicon} alt="" />
+              <strong>Share Profile</strong>
+            </div>
+          </RWebShare>
+
+          {showMenu && (
+            <div className="overlay" onClick={handleClickMenu}></div>
+          )}
         </div>
       </nav>
-      {showMenu && <div className="overlay" onClick={handleClickMenu}></div>}
-    </>
   );
 };
 
 export default MobileMenu;
+
+
+

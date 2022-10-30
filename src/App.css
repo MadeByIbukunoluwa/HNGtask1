@@ -18,12 +18,26 @@
     /* border: 1px solid red; */
     width: 90%;
 }
+.overlay {
+       position: absolute;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        background: rgba(0, 0, 0, 0.5);
+        transition: opacity 200ms;
+        visibility: hidden;
+        opacity: 0.5;
+        width: 100%;
+        height: 100%;
+         cursor: default;
+}
 .header__slack__link {
     display: none;
 }
-.profile__section {
+/* .profile__section {
     position: relative;
-}
+} */
 .profile__section #twitter {
     font-weight: 700;
     font-style: bold;
@@ -108,7 +122,7 @@ display: none;
     justify-content: center;
     align-items: center;
     text-align: center;
-    position: relative;
+    /* position: relative; */
     background: #EAECF0;
     list-style: none;
     text-decoration: none;

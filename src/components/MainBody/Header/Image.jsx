@@ -7,7 +7,7 @@ const Image = ({handleClickImage,showImage}) => {
   return (
     <div className="link-tree-header-profileImage">
       <img
-        src="https://unsplash.com/photos/fug7hitpSDE/"
+        src="https://unsplash.com/photos/fug7hitpSDE"
         alt=""
         tabIndex="0"
         id="profile__img"
