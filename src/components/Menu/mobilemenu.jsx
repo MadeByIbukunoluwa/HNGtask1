@@ -14,7 +14,7 @@ const MobileMenu = ({ handleClickMenu, showMenu }) => {
       </div>
 
         <div
-          className={`mobile__menu__popup ${showMenu ? "show" : ""}`}
+          className={`mobile__menu__popup ${showMenu ? "show" : ""}`} 
           onClick={handleClickMenu} >
           <RWebShare
             data={{
