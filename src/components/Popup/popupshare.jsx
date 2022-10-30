@@ -1,15 +1,9 @@
 import React,{useState} from "react"
 import popupshareicon from "/popupshare.svg"
-    const PopupComponent = ({setPopup,setCopyAlert,copyAlert}) => {
-        const [error, setError] = useState("")
+    const PopupComponent = ({setCopyAlert,copyAlert}) => {
         function copyLink () {
-            navigator.clipboard.writeText(window.location.origin)
-            .then(()=> {
-                console.log("set")
-            }).catch(err => {
-                setError(err)
-            })
-            {copyAlert && <Alert alert = {copyAlert} setCopyAlert = {setCopyAlert} text = {error}/>}
+           
+            {copyAlert && <Alert alert = {copyAlert} setCopyAlert = {setCopyAlert} text = {}/>}
             setPopup(false) 
             setCopyAlert(true) 
         } 

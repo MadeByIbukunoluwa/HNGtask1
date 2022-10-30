@@ -1,11 +1,12 @@
 import React,{useState} from 'react'
-import "../App.css"
+import "../../App.css"
 import Link from '../Link/LinkItem'
-import Alert from '../Alert'
-import PopupComponent from '../popupshare'
+import LinkInfo from '../Link/LinkInfo'
+// import Alert from '../Alert'
+// import PopupComponent from '../popupshare'
 import linksArray from '../../data/links'
-import mobilesharebutton from '/mobilesharebutton.svg'
-import desktopsharebutton from '/desktopsharebutton.svg'
+
+import desktopshareicon from '../../assets/images/desktopshareicon.svg';
 
 const Container = () => {
         const [popup, setPopup] = useState(false)
@@ -24,15 +25,6 @@ const Container = () => {
         <p id="twitter">@ibkisthere</p>
         <p id="slack">ibukunoluwa</p>
       </section>
-
-      <img
-        src={mobilesharebutton}
-        alt=""
-        className="mobile__share__button"
-        onClick={togglePopup}
-      />
-
-    <img src={desktopsharebutton} alt="" className="desktop__share__button" />
 
       {popup && (
         <PopupComponent setPopup={setPopup} setCopyAlert={setCopyAlert} />

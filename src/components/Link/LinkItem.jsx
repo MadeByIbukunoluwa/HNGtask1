@@ -16,9 +16,7 @@ const LinkItem = ({
    
 return (
         <div>
-            <Tooltip
-                title={linkDetails}
-                arrow>
+            <Tooltip title={linkInfo} arrow>
                 <a href={link} id={id} className="" target="_blank" rel="noreferrer nooppener" onClick={(e) => {
                     e.preventDefault();
                     if (e.target === e.currentTarget) {
@@ -29,26 +27,16 @@ return (
                     {linkText}
 
                     <RWebShare
-                        data={{
-                            text: linkTitle,
-                            url: link,
-                            title: linkSubText,
-                        }}
-
-                    >
-                        <span onClick={(e) => {
-                            e.preventDefault();
-                              }}>
-
+                        data={{ text: linkTitle, url: link, title: linkSubText, }} >
+                        <span onClick={(e) => {  e.preventDefault() }}>
                             <div className="share-icon">
-                              <img src={} alt="" />
+                              <img src={shareicon} alt="" />
                             </div>
                         </span>
-
                     </RWebShare>
+                      </a>
+                       </Tooltip>
                 </div>
-            </Tooltip>
-        </>
     );
 };
 

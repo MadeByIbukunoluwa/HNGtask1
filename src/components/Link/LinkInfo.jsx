@@ -2,7 +2,7 @@
 
 import React from "react";
 
-const LinkInfo ({ title, subText }) => {
+const LinkInfo = ({ title, subText }) => {
   return (
     <>
       <div className="link-tree-linkDetails">
