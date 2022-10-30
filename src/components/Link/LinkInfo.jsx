@@ -5,8 +5,8 @@ import React from "react";
 const LinkInfo = ({ title, subText }) => {
   return (
     <>
-      <div className="link-tree-linkDetails">
-        <div className="link-tree-linkDetails-container">
+      <div className="">
+        <div className="">
           {title && (
             <p>
               <strong>{title}</strong>

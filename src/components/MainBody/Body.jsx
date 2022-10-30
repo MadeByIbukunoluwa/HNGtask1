@@ -7,15 +7,18 @@ const Body = () => {
     <section className="links__section">
       {linksArray.map(({ name, link, id, subtext, title }) => {
         return (
-          <LinkItem
-            linkName={name}
-            link={link}
-            linkSubText={subtext}
-            linkTitle={title}
-            id={id}
-            key = {id}
-            linkInfo={<LinkInfo title={{ title }} subText={{ subtext }} />}
-          />
+          <>
+            {console.log(name, link)}
+            <LinkItem
+              linkName={name}
+              link={link}
+              linkSubText={subtext}
+              linkTitle={title}
+              id={id}
+              key={`link__section__${id}`}
+              linkInfo={<LinkInfo title={ title } subText={ subtext} />}
+            />
+          </>
         );
       })}
     </section>

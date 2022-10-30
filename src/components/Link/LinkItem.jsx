@@ -2,52 +2,55 @@
 
 import React from 'react'
 import "./LinkItem.css"
-import { Tooltip } from "@mui/material";
+import  Tooltip  from "@mui/material/Tooltip";
+import {FaMarkdown} from "react-icons/fa"
 import { RWebShare } from "react-web-share";
 import shareicon from "../../assets/images/share-icon.svg"
-import LinkInfo from './LinkInfo';
 const LinkItem = ({
     id,
     link,
-    linkText,
+    linkName,
     linkInfo,
     linkTitle,
     linkSubText
 }) => {
-   
+// function checklink (e) {
+//           e.preventDefault();
+//           if (e.target === e.currentTarget) {
+//             window.location.href = link;
+//           }
+//         }
 return (
-        <div className='link__item'>
-            <Tooltip title={linkInfo} arrow>
-                <a href={link} id={id} className="" target="_blank" rel="noreferrer nooppener" onClick={(e) => {
-                    e.preventDefault();
-                    if (e.target === e.currentTarget) {
-                        window.location.href = link;
-                    }
-                }}>
-                    <span></span>
-                    {linkText}
-
-                    <RWebShare
-                        data={{ text: linkTitle, url: link, title: linkSubText, }} >
-                        <span onClick={(e) => {  e.preventDefault() }}>
-                            <div className="share-icon">
-                              <img src={shareicon} alt="" />
-                            </div>
-                        </span>
-                    </RWebShare>
-                      </a>
-             </Tooltip>
-     </div>
-    );
+  <div className="link__item">
+    <Tooltip title={linkInfo} arrow>
+      <a
+        href={link}
+        id={id}
+        className=""
+        target="_blank"
+        rel="noreferrer nooppener"
+        onClick={(e) => checklink()}
+      >
+        {linkName}
+        <RWebShare data={{ text: linkTitle, url: link, title: linkSubText }}>
+          <span
+            onClick={(e) => {
+              e.preventDefault();
+            }}
+          >
+            <div className="share-icon">
+              <img src={shareicon} alt="" />
+            </div>
+          </span>
+        </RWebShare>
+      </a>
+    </Tooltip>
+  </div>
+);
 };
 
 
 export default LinkItem;
-
-
-
-
-
 
 
 
