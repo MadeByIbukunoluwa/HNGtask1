@@ -17,6 +17,7 @@ const Header = () => {
   const [showImage, setShowImage] = useState(false);
   const [showMenu, setShowMenu] = useState(false);
   const [showPopup,setShowPopup] = useState(false)
+  
   const handleClickImage = () => {
     setShowImage(() => !showImage);
     console.log(showImage); 
@@ -29,19 +30,12 @@ const Header = () => {
   return (
     <>
       <div className="link-tree-header">
-        {/* <section className="profile__section">
-          <img src="" alt="profile image" className="" />
-          <p id="twitter">@ibkisthere</p>
-          <p id="slack">ibukunoluwa</p>
-        </section> */}
-        {/* Share Icon */}
-        {/* Ellipsis Icon */} 
+     
         <MobileMenu showMenu={showMenu} handleClickMenu={handleClickMenu} />
         <DesktopMenu showMenu={showMenu} handleClickMenu={handleClickMenu} />
       </div>
-
-      <h1>Ibukunoluwa Akintobi</h1>
       <Image handleClickImage = {handleClickImage} showImage = {showImage} />
+      <h2>Ibukunoluwa Akintobi</h2>
 
       <div className="header__twitter__link">
         <FaTwitter />

@@ -28,7 +28,6 @@ min-width: 150px;
     align-items: center;
     gap: 2px;
 }
-
 .show {
     display: flex;
 }
