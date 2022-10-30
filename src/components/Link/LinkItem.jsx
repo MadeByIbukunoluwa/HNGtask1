@@ -6,6 +6,7 @@ import  Tooltip  from "@mui/material/Tooltip";
 import {FaMarkdown} from "react-icons/fa"
 import { RWebShare } from "react-web-share";
 import shareicon from "../../assets/images/share-icon.svg"
+import { fontSize } from '@mui/system';
 const LinkItem = ({
     id,
     link,
@@ -21,7 +22,9 @@ const LinkItem = ({
 //           }
 //         }
 return (
-    <Tooltip title={linkInfo} arrow>
+    <Tooltip sx={{
+        fontSize:"40px"
+    }} title={linkInfo} arrow>
         <div className="link__item">
       <a
         href={link}
