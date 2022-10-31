@@ -6,7 +6,6 @@
     justify-content: center;
     align-items: center;
     text-align: center;
-    /* position: relative; */
     background: #EAECF0;
     list-style: none;
     text-decoration: none;
@@ -15,11 +14,11 @@
     width: 100%;
     border-radius: 8px;
     padding: 24px 32px;
-    /* border: 1px solid #EAECF0; */
     color: #101828;
 }
-.link-item:hover {
+.link__item:hover {
     background-color: #D0D5DD;
+    transition: 0.2s;
 }
 .share__icon {
     position: absolute;

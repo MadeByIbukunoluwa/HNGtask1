@@ -22,7 +22,7 @@ function checklink (e) {
         }
 return (
   <>
-  {/* <Tooltip title={linkInfo} arrow> */}
+  <Tooltip title={linkInfo} arrow>
     <a
       href={link}
       id={id}
@@ -44,7 +44,7 @@ return (
         </div>
       </span>
     </RWebShare> */}
-  {/* </Tooltip> */}
+  </Tooltip>
 </>
 )
 };
