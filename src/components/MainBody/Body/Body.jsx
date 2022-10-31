@@ -13,13 +13,13 @@ const Body = () => {
         return (
           <>
             <LinkItem
+              key={`${Math.random() * 10380203040390}`}
               linkName={name}
               link={link}
               linkSubText={subtext}
               linkTitle={title}
               id={id}
-              key={`link__section__${id}`}
-              linkInfo={<LinkInfo title={ title } subText={ subtext} />}
+              linkInfo={<LinkInfo key={Math.random() * 10000} title={title} subText={subtext} />}
             />
           </>
         );
