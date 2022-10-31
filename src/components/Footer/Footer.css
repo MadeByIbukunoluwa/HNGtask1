@@ -3,8 +3,9 @@
     flex-direction: column;
     padding: 40px, 0px, 40px, 0px;
     width: 100%;
-    margin-bottom: 0 auto 30px auto;
-    /* max-width: 1152px; */
+    margin-left:10%;
+    margin-bottom:40px;
+    max-width: 1440px;
 }
 
 .ingressive__img {
@@ -15,10 +16,12 @@
 .hng__text {
     color:#667085;
 }
-.zuri__logo {
-    /* height: 18.582px; */
-    /* width: 138.775px; */
+.line__break {
+    border-top: 1px #eaecf0;
+    width:90%;
+    opacity:0.6;
 }
+
 .zuri__logo span {
     background: #e7332b;
         border-radius: 50%;
@@ -33,13 +36,8 @@
         flex-direction: row;
         justify-content: space-between;
         align-items: center;
+        margin-left:0;
+        padding:0 10%;
     }
-    .zuri__img {
-        
-    }
-     /* .ingressive__img {
-            transform: scale(1.5);
-     } */
-
 }
 

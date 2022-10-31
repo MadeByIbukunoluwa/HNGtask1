@@ -7,7 +7,12 @@
     max-width: 1280px;
     padding: 64px 0px 64px;
     gap: 32px;
-    width: 90%;
+    width: 80%;
 }
 
 
+@media screen and (min-width:700px) {
+    .container {
+            width:90%;
+        }
+}
