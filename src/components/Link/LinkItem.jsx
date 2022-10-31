@@ -29,7 +29,7 @@ return (
       className="link__item"
       target="_blank"
       rel="noreferrer nooppener"
-      onClick={(e) => checklink()}
+      onClick={() => checklink()}
     >
       {linkName}
     </a>
