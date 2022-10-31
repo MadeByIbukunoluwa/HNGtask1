@@ -12,7 +12,6 @@ const Body = () => {
       {linksArray.map(({ name, link, id, subtext, title }) => {
         return (
           <>
-            {console.log(name, link)}
             <LinkItem
               linkName={name}
               link={link}

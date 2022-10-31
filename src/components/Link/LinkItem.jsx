@@ -3,10 +3,9 @@
 import React from 'react'
 import "./LinkItem.css"
 import  Tooltip  from "@mui/material/Tooltip";
-import {FaMarkdown} from "react-icons/fa"
 import { RWebShare } from "react-web-share";
 import shareicon from "../../assets/images/share-icon.svg"
-import { fontSize } from '@mui/system';
+
 const LinkItem = ({
     id,
     link,
@@ -15,42 +14,39 @@ const LinkItem = ({
     linkTitle,
     linkSubText
 }) => {
-// function checklink (e) {
-//           e.preventDefault();
-//           if (e.target === e.currentTarget) {
-//             window.location.href = link;
-//           }
-//         }
+function checklink (e) {
+          e.preventDefault();
+          if (e.target === e.currentTarget) {
+            window.location.href = link;
+          }
+        }
 return (
-    <Tooltip sx={{
-        fontSize:"40px"
-    }} title={linkInfo} arrow>
-        <div className="link__item">
-      <a
-        href={link}
-        id={id}
-        className="link__item__inner__link"
-        target="_blank"
-        rel="noreferrer nooppener"
-        onClick={(e) => checklink()}
+  <>
+  {/* <Tooltip title={linkInfo} arrow> */}
+    <a
+      href={link}
+      id={id}
+      className="link__item"
+      target="_blank"
+      rel="noreferrer nooppener"
+      onClick={(e) => checklink()}
+    >
+      {linkName}
+    </a>
+    {/* <RWebShare data={{ text: linkTitle, url: link, title: linkSubText }}>
+      <span
+        onClick={(e) => {
+          e.preventDefault();
+        }}
       >
-        {linkName}
-
-      </a>
-        <RWebShare data={{ text: linkTitle, url: link, title: linkSubText }}>
-          <span
-            onClick={(e) => {
-              e.preventDefault();
-            }} >
-            <div className="share__icon">
-              <img src={shareicon} alt="" />
-            </div>
-          </span>
-        </RWebShare>
-        
-  </div>
-    </Tooltip>
-);
+        <div className="share__icon">
+          <img src={shareicon} alt="" />
+        </div>
+      </span>
+    </RWebShare> */}
+  {/* </Tooltip> */}
+</>
+)
 };
 
 

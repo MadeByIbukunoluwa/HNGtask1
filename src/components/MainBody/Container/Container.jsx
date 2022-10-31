@@ -3,7 +3,7 @@ import "./Container.css"
 import Header from '../Header/Header';
 import Socials from '../Socials/Socials';
 import Body from '../Body/Body';
-
+import Footer from '../../Footer/Footer';
 
 const Container = () => {
 
@@ -12,6 +12,7 @@ const Container = () => {
       <Header/>
         <Body/>
     <Socials/>
+    <Footer/>
     </div>
   );
 }

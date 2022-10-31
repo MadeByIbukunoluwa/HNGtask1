@@ -30,7 +30,6 @@ const Header = () => {
       </div>
 
       <Image handleClickImage = {handleClickImage} showImage = {showImage} />
-      <h3>@ibukunoluwa Akintobi</h3>
       <div className="header__twitter__link">
         <FaTwitter />
         <strong>
@@ -40,7 +39,7 @@ const Header = () => {
             rel="noreferrer nooppener"
             id="twitter"
           >
-            Ibukunoluwa Akintobi
+            @ibkisthere
           </a>
         </strong>
       </div>

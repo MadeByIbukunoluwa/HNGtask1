@@ -5,7 +5,7 @@ function App() {
    return (
     <main className="app">
         <Container/>
-        <Footer/>
+        {/* <Footer/> */}
     </main>
   )
 }
