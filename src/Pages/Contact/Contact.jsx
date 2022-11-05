@@ -29,7 +29,7 @@ function ContactPage() {
             const { name, value } = e.target;
 
             setFormInfo({
-              ...formData,
+              ...formInfo,
               [name]: value,
             });
           };
@@ -60,24 +60,25 @@ function ContactPage() {
 
   return (
     <section>
-      {/* success message */}
+    
       {showMessage && (
         <p className="form_modal">Your message was sent succesfully</p>
       )}
 
-      {/* contact form */}
+
       <div className="contact_container">
         <h1>Contact Me</h1>
         <p>Hi there, contact me to ask me about anything you have in mind.</p>
 
         <form
-          action=""
+          action="POST"
+          data-netlify="true"
           onSubmit={handleSubmit}
           className= "contact_form"
         >
-          {/* first name and last name */}
+         
           <div className="form_names">
-            {/* first name */}
+
             <div>
               <label >First Name</label>
               <input
@@ -90,7 +91,6 @@ function ContactPage() {
                 required
               />
             </div>
-
             {/* last name */}
             <div>
               <label htmlFor="last_name">Last Name</label>
