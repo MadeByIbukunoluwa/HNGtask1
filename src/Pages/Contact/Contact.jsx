@@ -7,12 +7,6 @@ import FooterSection from "../../components/Footer/Footer";
 
 
 
-
-
-
-
-
-
 function ContactPage() {
           const [formInfo, setFormInfo] = useState({
             firstName: "",
