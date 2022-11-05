@@ -1,9 +1,10 @@
 import React from 'react'
 import "./Body.css"
+import { Link } from "react-router-dom";
 import LinkItem from '../../Link/LinkItem';
 import linksArray from '../../../data/links';
 import LinkInfo from '../../Link/LinkInfo';
-
+import '../../Link/LinkItem.css';
 
 
 const Body = () => {
@@ -19,11 +20,20 @@ const Body = () => {
               linkSubText={subtext}
               linkTitle={title}
               id={id}
-              linkInfo={<LinkInfo key={Math.random() * 10000} title={title} subText={subtext} />}
+              linkInfo={
+                <LinkInfo
+                  key={Math.random() * 10000}
+                  title={title}
+                  subText={subtext}
+                />
+              }
             />
           </>
         );
       })}
+      <Link to="contact" id="contact" className="link__item">
+        Contact Me
+      </Link>
     </section>
   );
 }

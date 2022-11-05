@@ -45,6 +45,14 @@ const linksArray = [
     subtext:
       "get UI/UX books for writing copy that's engaging and conversational—and aligned with the goals of both the user andthe business",
   },
+  {
+    name: "Contact",
+    link: "contact",
+    id: "book__design",
+    maintext: "Contact Me",
+    subtext:
+      "Contact Me",
+  },
 ];
 
 

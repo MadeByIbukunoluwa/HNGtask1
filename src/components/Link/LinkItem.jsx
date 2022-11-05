@@ -14,12 +14,12 @@ const LinkItem = ({
     linkTitle,
     linkSubText
 }) => {
-function checklink (e) {
-          e.preventDefault();
-          if (e.target === e.currentTarget) {
-            window.location.href = link;
-          }
-        }
+// function checklink (e) {
+//           e.preventDefault();
+//           if (e.target === e.currentTarget) {
+//             window.location.href = link;
+//           }
+//         }
 return (
   <>
   <Tooltip title={linkInfo} arrow>
@@ -29,7 +29,7 @@ return (
       className="link__item"
       target="_blank"
       rel="noreferrer nooppener"
-      onClick={() => checklink()}
+      // onClick={() => checklink()}
     >
       {linkName}
     </a>
