@@ -48,7 +48,15 @@ function ContactPage() {
       });
     }
   };
+useEffect(() => {
+  const timeout = setTimeout(() => {
+    setShowMessage(false);
+  }, [2000]);
 
+  return () => {
+    clearTimeout(timeout);
+  };
+}, [showMessage]);
 
 
 
@@ -92,7 +100,6 @@ function ContactPage() {
             </div>
           </div>
 
-          {/* email */}
           <div className="form_email">
             <label htmlFor="email">Email</label>
             <input
@@ -106,7 +113,6 @@ function ContactPage() {
             />
           </div>
 
-          {/* message */}
           <div className="form_message">
             <label htmlFor="message">Message</label>
             <textarea
@@ -124,7 +130,6 @@ function ContactPage() {
             {emailError && <p>Please enter a message</p>}
           </div>
 
-          {/* confirmation */}
           <div className="form_confirm">
             <input type="checkbox" id="confirm" />
             <p>
@@ -137,11 +142,13 @@ function ContactPage() {
           <button type="submit" id="btn__submit">
             Send message
           </button>
+          {showMessage && (
+            <p style={{ color: "#1570ef" }}>
+              Your message was sent succesfully
+            </p>
+          )}
         </form>
       </div>
-      {showMessage && (
-        <p style={{ color: "#1570ef" }}>Your message was sent succesfully</p>
-      )}
 
       <FooterSection />
     </section>
