@@ -68,7 +68,7 @@ useEffect(() => {
 
         <form
           action="POST"
-          data-netlify="true"
+          netlify
           onSubmit={handleSubmit}
           className="contact_form"
         >
