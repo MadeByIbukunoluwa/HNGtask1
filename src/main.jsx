@@ -1,11 +1,29 @@
 import React from 'react'
 import ReactDOM from 'react-dom/client'
 import App from './Pages/App'
+import ContactPage from './Pages/Contact/Contact';
 import { createBrowserRouter, RouterProvider, Route } from "react-router-dom";
 import './index.css'
 
-ReactDOM.createRoot(document.getElementById('root')).render(
+
+
+
+const router = createBrowserRouter([
+  {
+    path: "/",
+    element: <App />,
+    errorElement: <ErrorPage />,
+    children: [],
+  },
+  {
+    path: "contact",
+    element: <ContactPage />,
+  },
+]);
+
+
+ReactDOM.createRoot(document.getElementById("root")).render(
   <React.StrictMode>
-    <App />
+    <RouterProvider router={router} />
   </React.StrictMode>
-)
+);
