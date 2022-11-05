@@ -1,0 +1,25 @@
+.form_modal {
+    position: fixed;
+    left: 50%;
+    top: 10%;
+    transform: translate(-50%, -50%);
+    background-color: green;
+    padding: 20px 10px;
+    text-align: center;
+    color: white;
+    font-size: 16px;
+}
+
+.contact_container {
+    width: 50%;
+    margin: 0 auto;
+    padding-top: 50px;
+}
+
+.contact_container h1 {
+    margin-bottom: 15px;
+}
+
+.contact_container p {
+    color: #475467;
+}
