@@ -54,12 +54,6 @@ function ContactPage() {
 
   return (
     <section>
-    
-      {showMessage && (
-        <p className="form_modal">Your message was sent succesfully</p>
-      )}
-
-
       <div className="contact_container">
         <h1>Contact Me</h1>
         <p>Hi there, contact me to ask me about anything you have in mind.</p>
@@ -68,13 +62,11 @@ function ContactPage() {
           action="POST"
           data-netlify="true"
           onSubmit={handleSubmit}
-          className= "contact_form"
+          className="contact_form"
         >
-         
           <div className="form_names">
-
             <div>
-              <label >First Name</label>
+              <label>First Name</label>
               <input
                 value={formInfo.firstName}
                 onChange={handleInputChange}
@@ -101,7 +93,7 @@ function ContactPage() {
           </div>
 
           {/* email */}
-          <div className= "form_email" >
+          <div className="form_email">
             <label htmlFor="email">Email</label>
             <input
               value={formInfo.email}
@@ -115,7 +107,7 @@ function ContactPage() {
           </div>
 
           {/* message */}
-          <div className="form_message" >
+          <div className="form_message">
             <label htmlFor="message">Message</label>
             <textarea
               style={{
@@ -127,16 +119,17 @@ function ContactPage() {
               onChange={handleInputChange}
               id="message"
               name="message"
-              placeholder="Send me a message and I'll reply you as soon as possible..."
+              placeholder="Send me a message and I'll reply you in 24 hours.."
             ></textarea>
             {emailError && <p>Please enter a message</p>}
           </div>
 
           {/* confirmation */}
-          <div className= "form_confirm" >
+          <div className="form_confirm">
             <input type="checkbox" id="confirm" />
             <p>
-              You agree to providing your data to Ibukunoluwa who may contact you.
+              You agree to providing your data to Ibukunoluwa who may contact
+              you.
             </p>
           </div>
 
@@ -146,10 +139,11 @@ function ContactPage() {
           </button>
         </form>
       </div>
+      {showMessage && (
+        <p style={{ color: "#1570ef" }}>Your message was sent succesfully</p>
+      )}
 
       <FooterSection />
-
-      
     </section>
   );
 }
