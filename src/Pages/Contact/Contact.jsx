@@ -31,7 +31,7 @@ function ContactPage() {
   const handleSubmit = (e) => {
     e.preventDefault();
 
-    const { firstName, lastName, email, message } = formData;
+    const { firstName, lastName, email, message } = formInfo;
 
     if (message.trim() === "") {
       setEmailError(true);
