@@ -21,9 +21,8 @@ const DesktopMenu = ({ handleClickMenu, showMenu }) => {
                   </small>
                 </RWebShare> 
       </nav>
-      {showMenu && <div className="overlay" onClick={handleClickMenu}></div>}
+      {showMenu && <div className="overlay" onClick={handleClickMenu}></div>} 
  </>
-
   )
 }
 
