@@ -1,6 +1,7 @@
 import React from 'react'
 import ReactDOM from 'react-dom/client'
 import App from './Pages/App'
+import ErrorPage from './error-page';
 import ContactPage from './Pages/Contact/Contact';
 import { createBrowserRouter, RouterProvider, Route } from "react-router-dom";
 import './index.css'
