@@ -103,3 +103,26 @@
     font-size: 16px;
     font-weight: 600;
 }
+
+@media screen and (max-width: 700px) {
+    .contact_container {
+        width: 85%;
+    }
+
+    .form_names {
+        flex-direction: column;
+    }
+
+    .form_names div {
+        width: 100%;
+    }
+
+    .form_confirm {
+        align-items: flex-start;
+    }
+
+    .form_confirm input {
+        height: 20px;
+        width: 20px;
+    }
+}
