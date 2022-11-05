@@ -1,6 +1,6 @@
-import Container from './components/MainBody/Container/Container'
+import Container from '../components/MainBody/Container/Container'
 import './App.css'
-import Footer from './components/Footer/Footer'
+import Footer from '../components/Footer/Footer'
 function App() {
    return (
      <main className="app">
