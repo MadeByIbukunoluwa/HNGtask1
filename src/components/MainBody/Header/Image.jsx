@@ -1,7 +1,7 @@
 import React from "react";
 import camera from "../../../assets/images/camera.svg";
 import profileimg from "../../../assets/images/profile-img.jpg"
-import "../../../App.css"
+import "../../../Pages/App.css"
 import "./Image.css" 
 
 
