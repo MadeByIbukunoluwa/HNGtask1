@@ -28,7 +28,7 @@ function ContactPage() {
           const handleInputChange = (e) => {
             const { name, value } = e.target;
 
-            setFormData({
+            setFormInfo({
               ...formData,
               [name]: value,
             });
@@ -46,7 +46,7 @@ function ContactPage() {
     if (firstName !== "" && lastName !== "" && email !== "" && message !== "") {
       setShowMessage(true);
       setEmailError(false);
-      setFormData({
+      setFormInfo({
         firstName: "",
         lastName: "",
         email: "",
@@ -54,6 +54,9 @@ function ContactPage() {
       });
     }
   };
+
+
+
 
   return (
     <section>
